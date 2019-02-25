@@ -139,14 +139,10 @@ def station_stats(df):
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
-
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
-
-
     # display total travel time
-
-    trip_dur_in_s=df['Trip Duration'].sum()                                     # editing after review 1 - .lower()
+    trip_dur_in_s=df['Trip Duration'].sum() # editing after review 1 - .lower()
     trip_dur_in_m=trip_dur_in_s//60
     trip_dur_in_h=trip_dur_in_m//60
     print('Total travel time: ', trip_dur_in_h, 'hour(-s)', trip_dur_in_m%60, 'minut(-es)', trip_dur_in_s%60, 'second(-s)' )
@@ -161,15 +157,12 @@ def trip_duration_stats(df):
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
-
     print('\nCalculating User Stats...\n')
     start_time = time.time()
-
     # Display counts of user types
     print('Counts of user types: \n',df['User Type'].value_counts())
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
     # Display counts of gender
     # Display earliest, most recent, and most common year of birth
     check=df.columns.values.tolist()
