@@ -2,7 +2,7 @@
 25.02.2019
 
 ### Project Title
-Explore US  Bikeshare Data
+Explore US Bikeshare Data
 
 ### Description
 Calculates statistics and builds an interactive environment where a user chooses the data and filter for a dataset to analyze.
