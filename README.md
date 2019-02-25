@@ -14,4 +14,4 @@ washington.csv
 bikeshare.py
 ### Credits
 https://github.com/N431M/pdsnd_github
-https://classroom.udacity.com/me
+https://udacity.com/
